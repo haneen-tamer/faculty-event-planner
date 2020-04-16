@@ -16,3 +16,6 @@ F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj
 C:\Users\Aya\Desktop\Planner\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
 C:\Users\Aya\Desktop\Planner\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\Aya\Desktop\Planner\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+C:\Users\sondos\Desktop\db project\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
+C:\Users\sondos\Desktop\db project\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
+C:\Users\sondos\Desktop\db project\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
