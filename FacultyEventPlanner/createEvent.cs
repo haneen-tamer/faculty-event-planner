@@ -77,16 +77,6 @@ namespace FacultyEventPlanner
         {
         }
 
-        private void titleTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hostCLB_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void createEvent_FormClosed(object sender, FormClosedEventArgs e)
         {
             OracleHelper.closeConnection();
