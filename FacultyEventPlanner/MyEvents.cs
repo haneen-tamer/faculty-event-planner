@@ -330,5 +330,5 @@ namespace FacultyEventPlanner
             timeCB.Text = ev.date.ToString() + ": " + ev.start_time + " - " + ev.end_time;
             depCB.SelectedIndex = evDepIndx;
         }
-    }
+    }//sondos//
 }

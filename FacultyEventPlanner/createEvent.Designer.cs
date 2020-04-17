@@ -51,6 +51,7 @@
             this.titleTxt.Name = "titleTxt";
             this.titleTxt.Size = new System.Drawing.Size(466, 22);
             this.titleTxt.TabIndex = 0;
+            this.titleTxt.TextChanged += new System.EventHandler(this.titleTxt_TextChanged);
             // 
             // label1
             // 
@@ -145,6 +146,7 @@
             this.hostCLB.Name = "hostCLB";
             this.hostCLB.Size = new System.Drawing.Size(466, 72);
             this.hostCLB.TabIndex = 19;
+            this.hostCLB.SelectedIndexChanged += new System.EventHandler(this.hostCLB_SelectedIndexChanged);
             // 
             // locCB
             // 
