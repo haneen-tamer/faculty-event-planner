@@ -19,7 +19,10 @@ namespace FacultyEventPlanner
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            this.Hide();
+            addMember add = new addMember();
+            add.Closed += (s, args) => this.Close();
+            add.Show();
         }
 
         private void button2_Click(object sender, EventArgs e)
