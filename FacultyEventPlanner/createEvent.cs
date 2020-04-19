@@ -63,6 +63,8 @@ namespace FacultyEventPlanner
             userDR = user.ExecuteReader();
             while (userDR.Read())
             {
+                if (userDR[2].ToString().CompareTo(OracleHelper.LoggedIn.user_name) == 0)
+                    continue;
                 hostCLB.Items.Add(userDR[0]+" "+userDR[1]);
                 usernames[userDR[0] + " " + userDR[1]] = userDR[2].ToString();
             }
@@ -73,6 +75,21 @@ namespace FacultyEventPlanner
 
         private void capTxt_TextChanged(object sender, EventArgs e)
         {
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            titleTxt.Clear();
+            descriptionTxt.Clear();
+            capTxt.Clear();
+            locCB.Items.Clear();
+            timeCB.Items.Clear();
+            depCB.Items.Clear();
+            hostCLB.Items.Clear();
+            this.Hide();
+            UserHome u = new UserHome();
+            u.Closed += (s, args) => this.Close();
+            u.Show();
         }
 
         private void createEvent_FormClosed(object sender, FormClosedEventArgs e)
@@ -112,11 +129,11 @@ namespace FacultyEventPlanner
                 return;
             }
 
-            //if(locCB.SelectedIndex > -1 || timeCB.SelectedIndex > -1 || depCB.SelectedIndex > -1)
-            //{
-            //    MessageBox.Show("Please do not leave empty fields..", "Warning");
-            //    return;
-            //}
+            if (locCB.SelectedIndex < 0 || timeCB.SelectedIndex < 0 || depCB.SelectedIndex < 0)
+            {
+                MessageBox.Show("Please do not leave empty fields..", "Warning");
+                return;
+            }
 
             try
             {
@@ -147,7 +164,7 @@ namespace FacultyEventPlanner
             insEvent.Parameters.Add("et", endTimes[tIndx].ToString());
             insEvent.Parameters.Add("ld", dates[tIndx].ToString().ToUpper());
             insEvent.Parameters.Add("did", dids[depCB.SelectedIndex]);
-            insEvent.Parameters.Add("hst", "HT_2000"); //TODO change to logged in user
+            insEvent.Parameters.Add("hst", OracleHelper.LoggedIn.user_name);
             insEvent.ExecuteNonQuery();
 
             //insert hosts

@@ -76,9 +76,7 @@ namespace FacultyEventPlanner
                 AND title = e_title
                 AND event.d_id =  department.d_id";
                 cmdstr += " and event.d_id = " + d;
-                StreamWriter s = new StreamWriter(new FileStream("dep.txt", FileMode.Append));
-                s.WriteLine(cmdstr);
-                s.Close();
+                
                 adapter = new OracleDataAdapter(cmdstr, constr);
                 adapter.Fill(ds, d);
                 eventsDGV.DataSource = ds.Tables[d];
@@ -96,7 +94,6 @@ namespace FacultyEventPlanner
             createEvent c = new createEvent();
             c.Closed += (s, args) => this.Close();
             c.Show();
-            //hiiiiii
 
         }
 
@@ -111,6 +108,20 @@ namespace FacultyEventPlanner
             MyEvents c = new MyEvents();
             c.Closed += (s, args) => this.Close();
             c.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            depComboBox.Items.Clear();
+            this.Hide();
+            LoginForm l = new LoginForm();
+            l.Closed += (s, args) => this.Close();
+            l.Show();
+        }
+
+        private void eventsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
