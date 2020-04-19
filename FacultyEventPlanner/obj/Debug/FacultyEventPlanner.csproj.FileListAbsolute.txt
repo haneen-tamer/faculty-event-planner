@@ -27,3 +27,6 @@ F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\Facu
 F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CopyComplete
 F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
+C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
+C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
