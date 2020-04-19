@@ -90,6 +90,12 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="viewJobs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="viewJobs.Designer.cs">
+      <DependentUpon>viewJobs.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="addMember.resx">
       <DependentUpon>addMember.cs</DependentUpon>
     </EmbeddedResource>
@@ -117,6 +123,9 @@
     </Compile>
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="viewJobs.resx">
+      <DependentUpon>viewJobs.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
