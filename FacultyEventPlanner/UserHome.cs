@@ -109,5 +109,10 @@ namespace FacultyEventPlanner
             c.Closed += (s, args) => this.Close();
             c.Show();
         }
+
+        private void eventsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

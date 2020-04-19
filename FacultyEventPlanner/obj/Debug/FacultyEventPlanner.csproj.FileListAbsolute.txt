@@ -33,3 +33,5 @@ C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj
 C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CoreCompileInputs.cache
 C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
+C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.View_Violations.resources
