@@ -22,9 +22,9 @@ namespace FacultyEventPlanner
         public View_Violations()
         {
             InitializeComponent();
+            dt = new DataTable();
             dt.Columns.Add("User");
             dt.Columns.Add("Number of Violations");
-            dt = new DataTable();
             row = dt.NewRow();
         }
 

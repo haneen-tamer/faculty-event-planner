@@ -188,7 +188,7 @@ namespace FacultyEventPlanner
         {
             listPanel.Add(eventsPanel);
             listPanel.Add(editPanel);
-            listPanel[panelIndx].BringToFront();
+            listPanel[0].BringToFront();
 
             OracleCommand getEvents = new OracleCommand();
             getEvents.Connection = OracleHelper.getConnection();
