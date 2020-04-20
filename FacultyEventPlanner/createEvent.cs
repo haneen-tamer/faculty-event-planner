@@ -77,6 +77,21 @@ namespace FacultyEventPlanner
         {
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            titleTxt.Clear();
+            descriptionTxt.Clear();
+            capTxt.Clear();
+            locCB.Items.Clear();
+            timeCB.Items.Clear();
+            depCB.Items.Clear();
+            hostCLB.Items.Clear();
+            this.Hide();
+            UserHome u = new UserHome();
+            u.Closed += (s, args) => this.Close();
+            u.Show();
+        }
+
         private void createEvent_FormClosed(object sender, FormClosedEventArgs e)
         {
             OracleHelper.closeConnection();

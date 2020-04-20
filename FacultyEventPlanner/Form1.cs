@@ -21,10 +21,14 @@ namespace FacultyEventPlanner
 
         private void button1_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             AdminHome AH = new AdminHome();
             AH.Closed += (s, args) => this.Close();
             AH.Show();
+
+
+            //// aya////
 
         }
 
@@ -41,9 +45,11 @@ namespace FacultyEventPlanner
             OracleHelper.closeConnection();
         }
 
+
         private void Form1_Load(object sender, EventArgs e)
         {
            
         }
+
     }
 }

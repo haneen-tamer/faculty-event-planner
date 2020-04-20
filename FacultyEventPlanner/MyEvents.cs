@@ -128,12 +128,12 @@ namespace FacultyEventPlanner
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
+            events.Clear();
+            eventsCLB.Items.Clear();
             titleTxt.Clear();
             descriptionTxt.Clear();
             capTxt.Clear();
             listPanel[0].BringToFront();
-            events.Clear();
-            eventsCLB.Items.Clear();
 
             OracleCommand getEvents = new OracleCommand();
             getEvents.Connection = OracleHelper.getConnection();
@@ -164,6 +164,16 @@ namespace FacultyEventPlanner
                 events.Add(ev);
 
             }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            events.Clear();
+            eventsCLB.Items.Clear();
+            this.Hide();
+            UserHome u = new UserHome();
+            u.Closed += (s, args) => this.Close();
+            u.Show();
         }
 
         public MyEvents()
@@ -330,5 +340,5 @@ namespace FacultyEventPlanner
             timeCB.Text = ev.date.ToString() + ": " + ev.start_time + " - " + ev.end_time;
             depCB.SelectedIndex = evDepIndx;
         }
-    }//sondos//
+    }
 }

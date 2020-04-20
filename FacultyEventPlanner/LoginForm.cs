@@ -55,6 +55,8 @@ namespace FacultyEventPlanner
                 UserHome uh = new UserHome();
                 uh.Closed += (s, args) => this.Close();
                 uh.Show();
+                passwordTxt.Clear();
+                userNameText.Clear();
             }
         }
     }

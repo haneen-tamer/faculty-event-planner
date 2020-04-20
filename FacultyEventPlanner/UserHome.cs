@@ -110,6 +110,18 @@ namespace FacultyEventPlanner
             c.Show();
         }
 
+<<<<<<< HEAD
+=======
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            depComboBox.Items.Clear();
+            this.Hide();
+            LoginForm l = new LoginForm();
+            l.Closed += (s, args) => this.Close();
+            l.Show();
+        }
+
+>>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
         private void eventsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
