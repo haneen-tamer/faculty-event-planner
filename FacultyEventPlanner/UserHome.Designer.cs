@@ -47,7 +47,7 @@
             // createEventBtn
             // 
             this.createEventBtn.Location = new System.Drawing.Point(632, 49);
-            this.createEventBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.createEventBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.createEventBtn.Name = "createEventBtn";
             this.createEventBtn.Size = new System.Drawing.Size(94, 39);
             this.createEventBtn.TabIndex = 0;
@@ -83,6 +83,7 @@
             // myAccountToolStripMenuItem
             // 
             this.myAccountToolStripMenuItem.Name = "myAccountToolStripMenuItem";
+
             this.myAccountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.myAccountToolStripMenuItem.Text = "My account";
             // 
@@ -116,6 +117,7 @@
             // 
             this.eventsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.eventsDGV.Location = new System.Drawing.Point(9, 221);
+
             this.eventsDGV.Margin = new System.Windows.Forms.Padding(2);
             this.eventsDGV.Name = "eventsDGV";
             this.eventsDGV.RowHeadersWidth = 51;
@@ -128,6 +130,7 @@
             // 
             this.depComboBox.FormattingEnabled = true;
             this.depComboBox.Location = new System.Drawing.Point(535, 184);
+
             this.depComboBox.Margin = new System.Windows.Forms.Padding(2);
             this.depComboBox.Name = "depComboBox";
             this.depComboBox.Size = new System.Drawing.Size(242, 21);
@@ -166,6 +169,7 @@
             this.Controls.Add(this.createEventBtn);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
+
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "UserHome";
             this.Text = "UserHome";

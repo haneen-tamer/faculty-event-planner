@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess.Client;
+using Oracle.DataAccess.Types;
 
 namespace FacultyEventPlanner
 {
@@ -19,7 +21,15 @@ namespace FacultyEventPlanner
 
         private void button1_Click(object sender, EventArgs e)
         {
+
+            this.Hide();
+            AdminHome AH = new AdminHome();
+            AH.Closed += (s, args) => this.Close();
+            AH.Show();
+
+
             //// aya////
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -34,5 +44,12 @@ namespace FacultyEventPlanner
         {
             OracleHelper.closeConnection();
         }
+
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+           
+        }
+
     }
 }
