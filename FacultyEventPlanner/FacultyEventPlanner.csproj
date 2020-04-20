@@ -90,7 +90,6 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="View_Violations.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,7 +98,7 @@
     </Compile>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <Compile Include="viewJobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -108,7 +107,6 @@
     </Compile>
     <EmbeddedResource Include="addMember.resx">
       <DependentUpon>addMember.cs</DependentUpon>
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
     </EmbeddedResource>
     <EmbeddedResource Include="createEvent.resx">
       <DependentUpon>createEvent.cs</DependentUpon>
@@ -135,13 +133,11 @@
     <EmbeddedResource Include="UserHome.resx">
       <DependentUpon>UserHome.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="View_Violations.resx">
       <DependentUpon>View_Violations.cs</DependentUpon>
-=======
+    </EmbeddedResource>
     <EmbeddedResource Include="viewJobs.resx">
       <DependentUpon>viewJobs.cs</DependentUpon>
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

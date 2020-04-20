@@ -47,11 +47,7 @@
             // createEventBtn
             // 
             this.createEventBtn.Location = new System.Drawing.Point(632, 49);
-<<<<<<< HEAD
             this.createEventBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
-            this.createEventBtn.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.createEventBtn.Name = "createEventBtn";
             this.createEventBtn.Size = new System.Drawing.Size(94, 39);
             this.createEventBtn.TabIndex = 0;
@@ -87,42 +83,27 @@
             // myAccountToolStripMenuItem
             // 
             this.myAccountToolStripMenuItem.Name = "myAccountToolStripMenuItem";
-<<<<<<< HEAD
-            this.myAccountToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-=======
+
             this.myAccountToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.myAccountToolStripMenuItem.Text = "My account";
             // 
             // myEventsToolStripMenuItem
             // 
             this.myEventsToolStripMenuItem.Name = "myEventsToolStripMenuItem";
-<<<<<<< HEAD
-            this.myEventsToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-=======
             this.myEventsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.myEventsToolStripMenuItem.Text = "My events";
             this.myEventsToolStripMenuItem.Click += new System.EventHandler(this.myEventsToolStripMenuItem_Click);
             // 
             // myRequestsToolStripMenuItem
             // 
             this.myRequestsToolStripMenuItem.Name = "myRequestsToolStripMenuItem";
-<<<<<<< HEAD
-            this.myRequestsToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-=======
             this.myRequestsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.myRequestsToolStripMenuItem.Text = "My requests";
             // 
             // myViolationsToolStripMenuItem
             // 
             this.myViolationsToolStripMenuItem.Name = "myViolationsToolStripMenuItem";
-<<<<<<< HEAD
-            this.myViolationsToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
-=======
             this.myViolationsToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.myViolationsToolStripMenuItem.Text = "My violations";
             // 
             // logoutToolStripMenuItem
@@ -136,11 +117,8 @@
             // 
             this.eventsDGV.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.eventsDGV.Location = new System.Drawing.Point(9, 221);
-<<<<<<< HEAD
-            this.eventsDGV.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
+
             this.eventsDGV.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.eventsDGV.Name = "eventsDGV";
             this.eventsDGV.RowHeadersWidth = 51;
             this.eventsDGV.RowTemplate.Height = 24;
@@ -152,11 +130,8 @@
             // 
             this.depComboBox.FormattingEnabled = true;
             this.depComboBox.Location = new System.Drawing.Point(535, 184);
-<<<<<<< HEAD
-            this.depComboBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
+
             this.depComboBox.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.depComboBox.Name = "depComboBox";
             this.depComboBox.Size = new System.Drawing.Size(242, 21);
             this.depComboBox.TabIndex = 3;
@@ -194,11 +169,8 @@
             this.Controls.Add(this.createEventBtn);
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
-<<<<<<< HEAD
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-=======
+
             this.Margin = new System.Windows.Forms.Padding(2);
->>>>>>> f11a395cf0448e35bb7618ef4703be554d9e66d8
             this.Name = "UserHome";
             this.Text = "UserHome";
             this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.UserHome_FormClosed);

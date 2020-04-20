@@ -13,7 +13,6 @@ F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj
 F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CopyComplete
 F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
-
 C:\Users\Aya\Desktop\Planner\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
 C:\Users\Aya\Desktop\Planner\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\Aya\Desktop\Planner\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
@@ -36,7 +35,6 @@ C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj
 C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
 C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
 C:\Users\quickfix\Documents\GitHub\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.View_Violations.resources
-
 F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
 F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe
 F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.pdb
@@ -54,4 +52,7 @@ F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\Facu
 C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
 C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
-
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.addMember.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.View_Violations.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.viewJobs.resources
