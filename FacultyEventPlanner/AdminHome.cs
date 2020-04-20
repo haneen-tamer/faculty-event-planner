@@ -175,5 +175,21 @@ namespace FacultyEventPlanner
         {
             
         }
+
+        private void Add_Member_button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            addMember v = new addMember();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
+
+        private void View_Jobs_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            viewJobs v = new viewJobs();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
     }
 }
