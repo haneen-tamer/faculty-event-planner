@@ -46,7 +46,9 @@ namespace FacultyEventPlanner
             #region Department Combobox
             OracleCommand Dept = new OracleCommand();
             Dept.Connection = OracleHelper.getConnection();
+
             Dept.CommandText = "select * from department";
+
             Dept.CommandType = CommandType.Text;
             OracleDataReader dep_reader = Dept.ExecuteReader();
             while (dep_reader.Read())
