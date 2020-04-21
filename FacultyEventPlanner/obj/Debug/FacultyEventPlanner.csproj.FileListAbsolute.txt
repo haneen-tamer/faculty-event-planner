@@ -37,3 +37,28 @@ F:\third year\Second Term\Database\Project\New folder\faculty-event-planner\Facu
 C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
 C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\Aya\Desktop\Planner1\faculty-event-planner-master\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+<<<<<<< HEAD
+=======
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.addMember.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.View_Violations.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.viewJobs.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.pdb
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csprojResolveAssemblyReference.cache
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.addMember.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Form1.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.LoginForm.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.MyEvents.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Properties.Resources.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.UserHome.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.View_Violations.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.viewJobs.resources
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.GenerateResource.Cache
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CoreCompileInputs.cache
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Form2.resources
+>>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb

@@ -31,8 +31,11 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumberOfViolations = new System.Windows.Forms.DataGridViewTextBoxColumn();
+<<<<<<< HEAD
             this.Block = new System.Windows.Forms.DataGridViewButtonColumn();
             this.backBtn = new System.Windows.Forms.Button();
+=======
+>>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -43,10 +46,15 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.User,
+<<<<<<< HEAD
             this.NumberOfViolations,
             this.Block});
             this.dataGridView1.Location = new System.Drawing.Point(64, 86);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+=======
+            this.NumberOfViolations});
+            this.dataGridView1.Location = new System.Drawing.Point(48, 70);
+>>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -70,6 +78,7 @@
             this.NumberOfViolations.ReadOnly = true;
             this.NumberOfViolations.Width = 125;
             // 
+<<<<<<< HEAD
             // Block
             // 
             this.Block.HeaderText = "Block";
@@ -88,6 +97,8 @@
             this.backBtn.UseVisualStyleBackColor = true;
             this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
             // 
+=======
+>>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
             // View_Violations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -110,7 +121,10 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn User;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumberOfViolations;
+<<<<<<< HEAD
         private System.Windows.Forms.DataGridViewButtonColumn Block;
         private System.Windows.Forms.Button backBtn;
+=======
+>>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
     }
 }

@@ -101,6 +101,8 @@ namespace FacultyEventPlanner
                 counter++;
                 dataGridView1.Rows[num].Cells[counter].Value = drow["Request Stautue"].ToString();
                 counter++;
+                dataGridView1.Rows[num].Cells[counter].Value = drow["start time"].ToString();
+                counter++;
                 dataGridView1.Rows[num].Cells[counter].Value = drow["Date"].ToString();
                 counter++;
                 dataGridView1.Rows[num].Cells[counter].Value = drow["Location Name"].ToString();
@@ -192,6 +194,7 @@ namespace FacultyEventPlanner
             v.Show();
         }
 
+<<<<<<< HEAD
         private void eventsByDepartmentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -224,5 +227,14 @@ namespace FacultyEventPlanner
             l.Closed += (s, args) => this.Close();
             l.Show();
         }
+=======
+        private void View_E_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 v = new Form2();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
+>>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
     }
 }
