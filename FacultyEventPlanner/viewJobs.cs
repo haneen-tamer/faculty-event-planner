@@ -14,7 +14,7 @@ namespace FacultyEventPlanner
 {
     public partial class viewJobs : Form
     {
-        string constractor = "Data Source = Orcl ; User Id = Scott ; Password= tiger;";
+        string constractor = "Data Source = Orcl ; User Id = hr ; Password= hr;";
         OracleDataAdapter adapt;
         DataSet ds;
         public viewJobs()
@@ -29,7 +29,7 @@ namespace FacultyEventPlanner
 
         private void viewJobs_Load(object sender, EventArgs e)
         {
-            string striing = "Select * from JOB ";
+            string striing = "select * from JOB";
             adapt = new OracleDataAdapter(striing, constractor);
             ds = new DataSet();
             adapt.Fill(ds);
