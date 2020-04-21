@@ -31,7 +31,6 @@
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.User = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NumberOfViolations = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Block = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -42,8 +41,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.User,
-            this.NumberOfViolations,
-            this.Block});
+            this.NumberOfViolations});
             this.dataGridView1.Location = new System.Drawing.Point(48, 70);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -62,12 +60,6 @@
             this.NumberOfViolations.HeaderText = "Number Of Violations";
             this.NumberOfViolations.Name = "NumberOfViolations";
             this.NumberOfViolations.ReadOnly = true;
-            // 
-            // Block
-            // 
-            this.Block.HeaderText = "Block";
-            this.Block.Name = "Block";
-            this.Block.ReadOnly = true;
             // 
             // View_Violations
             // 
@@ -89,6 +81,5 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.DataGridViewTextBoxColumn User;
         private System.Windows.Forms.DataGridViewTextBoxColumn NumberOfViolations;
-        private System.Windows.Forms.DataGridViewButtonColumn Block;
     }
 }
