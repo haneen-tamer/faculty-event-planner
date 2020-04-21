@@ -176,6 +176,14 @@ namespace FacultyEventPlanner
             u.Show();
         }
 
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            UserHome v = new UserHome();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
+
         public MyEvents()
         {
             InitializeComponent();

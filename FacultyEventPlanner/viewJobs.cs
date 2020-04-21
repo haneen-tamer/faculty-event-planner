@@ -41,5 +41,13 @@ namespace FacultyEventPlanner
             OracleCommandBuilder builder = new OracleCommandBuilder(adapt);
             adapt.Update(ds.Tables[0]);
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome v = new AdminHome();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
     }
 }

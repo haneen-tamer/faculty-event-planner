@@ -34,15 +34,19 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="AxShockwaveFlashObjects, Version=1.0.0.0, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
     <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.ReportSource, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="CrystalDecisions.Shared, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.4000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
     <Reference Include="Oracle.DataAccess, Version=2.112.1.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>E:\app\HaneenTamer\product\11.2.0\dbhome_1\ODP.NET\bin\2.x\Oracle.DataAccess.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -78,11 +82,29 @@
       <DependentUpon>EventsByDepartment.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
+    <Compile Include="EventsByDepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventsByDepForm.Designer.cs">
+      <DependentUpon>EventsByDepForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LocationRep.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LocationRep.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LocationsRepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationsRepForm.Designer.cs">
+      <DependentUpon>LocationsRepForm.cs</DependentUpon>
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -111,6 +133,18 @@
     <Compile Include="View_Violations.Designer.cs">
       <DependentUpon>View_Violations.cs</DependentUpon>
     </Compile>
+    <Compile Include="ViolationsRepForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ViolationsRepForm.Designer.cs">
+      <DependentUpon>ViolationsRepForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViolationsReport.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ViolationsReport.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -130,8 +164,18 @@
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EventsByDepartment.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="EventsByDepForm.resx">
+      <DependentUpon>EventsByDepForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationRep.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>LocationRep.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LocationsRepForm.resx">
+      <DependentUpon>LocationsRepForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>
@@ -157,6 +201,13 @@
     </EmbeddedResource>
     <EmbeddedResource Include="viewJobs.resx">
       <DependentUpon>viewJobs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViolationsRepForm.resx">
+      <DependentUpon>ViolationsRepForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViolationsReport.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ViolationsReport.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

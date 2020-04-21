@@ -191,5 +191,29 @@ namespace FacultyEventPlanner
             v.FormClosed += (s, args) => this.Close();
             v.Show();
         }
+
+        private void eventsByDepartmentsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            EventsByDepForm v = new EventsByDepForm();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
+
+        private void violationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            ViolationsRepForm v = new ViolationsRepForm();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
+
+        private void locationsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            LocationsRepForm v = new LocationsRepForm();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
     }
 }
