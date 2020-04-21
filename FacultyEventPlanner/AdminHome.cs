@@ -194,7 +194,7 @@ namespace FacultyEventPlanner
             v.Show();
         }
 
-<<<<<<< HEAD
+
         private void eventsByDepartmentsToolStripMenuItem_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -227,7 +227,7 @@ namespace FacultyEventPlanner
             l.Closed += (s, args) => this.Close();
             l.Show();
         }
-=======
+
         private void View_E_Button_Click(object sender, EventArgs e)
         {
             this.Hide();
@@ -235,6 +235,6 @@ namespace FacultyEventPlanner
             v.FormClosed += (s, args) => this.Close();
             v.Show();
         }
->>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
+
     }
 }

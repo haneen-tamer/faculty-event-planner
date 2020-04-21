@@ -70,9 +70,7 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="createEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
+    <Compile Include="createEvent.cs" />
     <Compile Include="createEvent.Designer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
