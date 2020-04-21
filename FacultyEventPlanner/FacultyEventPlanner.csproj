@@ -70,8 +70,12 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="createEvent.cs" />
-    <Compile Include="createEvent.Designer.cs" />
+    <Compile Include="createEvent.cs">
+<SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createEvent.Designer.cs">
+	<DependentUpon>createEvent.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -86,9 +90,6 @@
     </Compile>
     <Compile Include="EventsByDepForm.Designer.cs">
       <DependentUpon>EventsByDepForm.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
     </Compile>
     <Compile Include="List of Event Requests .cs">
       <SubType>Form</SubType>
@@ -135,7 +136,9 @@
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="createEvent.resx" />
+    <EmbeddedResource Include="createEvent.resx">
+<DependentUpon>createEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="List of Event Requests .resx">
       <DependentUpon>List of Event Requests .cs</DependentUpon>
     </EmbeddedResource>
@@ -157,9 +160,7 @@
       <DependentUpon>ViolationsReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    <EmbeddedResource Include="AdminHome.resx">
-      <DependentUpon>AdminHome.cs</DependentUpon>
-    </EmbeddedResource>
+    
     <Compile Include="viewJobs.cs">
       <SubType>Form</SubType>
     </Compile>
