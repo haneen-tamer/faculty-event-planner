@@ -77,6 +77,21 @@ namespace FacultyEventPlanner
         {
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            titleTxt.Clear();
+            descriptionTxt.Clear();
+            capTxt.Clear();
+            locCB.Items.Clear();
+            timeCB.Items.Clear();
+            depCB.Items.Clear();
+            hostCLB.Items.Clear();
+            this.Hide();
+            UserHome u = new UserHome();
+            u.Closed += (s, args) => this.Close();
+            u.Show();
+        }
+
         private void createEvent_FormClosed(object sender, FormClosedEventArgs e)
         {
             OracleHelper.closeConnection();
@@ -179,6 +194,31 @@ namespace FacultyEventPlanner
 
         private void locCB_SelectedIndexChanged(object sender, EventArgs e)
         {
+            OracleCommand cap = new OracleCommand();
+            cap.Connection = OracleHelper.getConnection();
+            cap.CommandType = CommandType.Text;
+            cap.CommandText = @"select L_capacity from location
+                                where l_name=:loc";
+            cap.Parameters.Add("loc", locCB.SelectedItem.ToString());
+            OracleDataReader capDR = cap.ExecuteReader();
+            if (capDR.Read())
+            {
+                try
+                {
+                    int capacity = int.Parse(capDR[0].ToString());
+                    int c = int.Parse(capTxt.Text);
+                    if (c>capacity)
+                    {
+                        MessageBox.Show("Capacity of event must not exceed location capacity! ["
+                            + locCB.SelectedItem.ToString() + " " + capacity + "]", "Warning");
+                    }
+                }catch(Exception ex)
+                {
+                    MessageBox.Show("Please enter number in capacity...", "Warning");
+                }
+            }
+
+
             OracleCommand loc = new OracleCommand();
             loc.Connection = OracleHelper.getConnection();
             loc.CommandText = @"select date_, start_time, end_time

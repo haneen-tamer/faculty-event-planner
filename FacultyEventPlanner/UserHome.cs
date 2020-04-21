@@ -38,7 +38,7 @@ namespace FacultyEventPlanner
             
             cmdstr = @"select title, capacity, description, l_name, ls_date, ls_start_time,
                 d_title, user_name from EVENT, department, host
-                where request_status = 'Rejected'
+                where request_status = 'approved'
                 AND title = e_title
                 AND event.d_id =  department.d_id";
             adapter = new OracleDataAdapter(cmdstr, constr);
@@ -53,7 +53,7 @@ namespace FacultyEventPlanner
             {
                 depComboBox.Items.Add(row["D_TITLE"].ToString());
             }
-            
+            eventsDGV.ReadOnly = true;
 
         }
 
@@ -108,6 +108,20 @@ namespace FacultyEventPlanner
             MyEvents c = new MyEvents();
             c.Closed += (s, args) => this.Close();
             c.Show();
+        }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            depComboBox.Items.Clear();
+            this.Hide();
+            LoginForm l = new LoginForm();
+            l.Closed += (s, args) => this.Close();
+            l.Show();
+        }
+
+        private void eventsDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
