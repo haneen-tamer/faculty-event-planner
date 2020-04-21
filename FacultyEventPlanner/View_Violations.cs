@@ -43,6 +43,13 @@ namespace FacultyEventPlanner
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            cmd3 = new OracleCommand();
+            cmd3.Connection = OracleHelper.getConnection();
+            cmd3.CommandText = @"select ";
+            int index = e.RowIndex;
+            cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
+            int r = cmd3.ExecuteNonQuery();
+
             if (e.ColumnIndex==2)
             {
                 cmd3 = new OracleCommand();
