@@ -92,11 +92,6 @@ namespace FacultyEventPlanner
             u.Show();
         }
 
-        private void backBtn_Click(object sender, EventArgs e)
-        {
-            
-        }
-
         private void createEvent_FormClosed(object sender, FormClosedEventArgs e)
         {
             OracleHelper.closeConnection();

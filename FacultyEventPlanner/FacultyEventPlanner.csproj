@@ -70,6 +70,10 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="createEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="createEvent.Designer.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +141,7 @@
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="createEvent.resx" />
     <EmbeddedResource Include="List of Event Requests .resx">
       <DependentUpon>List of Event Requests .cs</DependentUpon>
     </EmbeddedResource>

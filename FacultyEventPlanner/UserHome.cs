@@ -91,7 +91,7 @@ namespace FacultyEventPlanner
         private void createEventBtn_Click(object sender, EventArgs e)
         {
             this.Hide();
-            MyEvents c= new MyEvents();
+            createEvent c= new createEvent();
             c.Closed += (s, args) => this.Close();
             c.Show();
 
