@@ -57,7 +57,7 @@ namespace FacultyEventPlanner
                 cmd3.Connection = OracleHelper.getConnection();
                 cmd3.CommandText = "select E_title from Host where user_name=:name";
                 int index = e.RowIndex;
-                cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
+                cmd3.Parameters.Add("name", dt.Rows[e.RowIndex]["User"].ToString());
                 Dr2 = cmd3.ExecuteReader();
                 while(Dr2.Read())
                 {
@@ -80,14 +80,13 @@ namespace FacultyEventPlanner
                     cmd3.CommandText = "Delete from Event where title=:name";
                     cmd3.Parameters.Add("name", Dr2[0].ToString());
                     cmd3.ExecuteNonQuery();
-
+              
                 }
                 Dr2.Close();
                 cmd3 = new OracleCommand();
                 cmd3.Connection = OracleHelper.getConnection();
                 cmd3.CommandText = "Delete from users where user_name=:name";
-
-                cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
+                cmd3.Parameters.Add("name", dt.Rows[e.RowIndex]["User"].ToString());
                 int r= cmd3.ExecuteNonQuery();
                 if (r != -1)
                 {

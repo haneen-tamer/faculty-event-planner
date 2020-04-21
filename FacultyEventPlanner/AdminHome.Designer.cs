@@ -43,12 +43,13 @@
             this.Combo_Box_of_DEP = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.eventsByDepartmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.violationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.locationsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.logoutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.viewJobsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -58,10 +59,8 @@
             this.Add_Member_button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.Add_Member_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Add_Member_button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-
-            this.Add_Member_button.Location = new System.Drawing.Point(133, 70);
+            this.Add_Member_button.Location = new System.Drawing.Point(108, 62);
             this.Add_Member_button.Margin = new System.Windows.Forms.Padding(4);
-
             this.Add_Member_button.Name = "Add_Member_button";
             this.Add_Member_button.Size = new System.Drawing.Size(117, 52);
             this.Add_Member_button.TabIndex = 0;
@@ -74,10 +73,8 @@
             this.View_E_Button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.View_E_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.View_E_Button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-
-            this.View_E_Button.Location = new System.Drawing.Point(459, 127);
+            this.View_E_Button.Location = new System.Drawing.Point(413, 62);
             this.View_E_Button.Margin = new System.Windows.Forms.Padding(4);
-
             this.View_E_Button.Name = "View_E_Button";
             this.View_E_Button.Size = new System.Drawing.Size(134, 53);
             this.View_E_Button.TabIndex = 1;
@@ -90,10 +87,8 @@
             this.View_V_Button.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.View_V_Button.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.View_V_Button.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-
-            this.View_V_Button.Location = new System.Drawing.Point(717, 127);
+            this.View_V_Button.Location = new System.Drawing.Point(763, 62);
             this.View_V_Button.Margin = new System.Windows.Forms.Padding(4);
-
             this.View_V_Button.Name = "View_V_Button";
             this.View_V_Button.Size = new System.Drawing.Size(127, 52);
             this.View_V_Button.TabIndex = 2;
@@ -106,10 +101,8 @@
             this.View_Jobs.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.View_Jobs.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.View_Jobs.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-
             this.View_Jobs.Location = new System.Drawing.Point(1072, 70);
             this.View_Jobs.Margin = new System.Windows.Forms.Padding(4);
-
             this.View_Jobs.Name = "View_Jobs";
             this.View_Jobs.Size = new System.Drawing.Size(116, 52);
             this.View_Jobs.TabIndex = 3;
@@ -130,10 +123,8 @@
             this.Ls_start_Time,
             this.Ls_Date,
             this.L_name});
-
             this.dataGridView1.Location = new System.Drawing.Point(36, 260);
             this.dataGridView1.Margin = new System.Windows.Forms.Padding(4);
-
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowHeadersWidth = 51;
@@ -201,10 +192,8 @@
             // 
             this.Combo_Box_of_DEP.BackColor = System.Drawing.SystemColors.MenuBar;
             this.Combo_Box_of_DEP.FormattingEnabled = true;
-
-            this.Combo_Box_of_DEP.Location = new System.Drawing.Point(989, 215);
+            this.Combo_Box_of_DEP.Location = new System.Drawing.Point(763, 214);
             this.Combo_Box_of_DEP.Margin = new System.Windows.Forms.Padding(4);
-
             this.Combo_Box_of_DEP.Name = "Combo_Box_of_DEP";
             this.Combo_Box_of_DEP.Size = new System.Drawing.Size(208, 21);
             this.Combo_Box_of_DEP.TabIndex = 5;
@@ -215,7 +204,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(609, 175);
+            this.label1.Location = new System.Drawing.Point(612, 209);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(127, 24);
             this.label1.TabIndex = 6;
@@ -230,9 +219,25 @@
             this.reportsToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1340, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(1005, 24);
             this.menuStrip1.TabIndex = 7;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuToolStripMenuItem
+            // 
+            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.logoutToolStripMenuItem,
+            this.viewJobsToolStripMenuItem});
+            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
+            this.menuToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
+            this.menuToolStripMenuItem.Text = "Menu";
+            // 
+            // logoutToolStripMenuItem
+            // 
+            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
+            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.logoutToolStripMenuItem.Text = "Logout";
+            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
             // 
             // reportsToolStripMenuItem
             // 
@@ -241,44 +246,36 @@
             this.violationsToolStripMenuItem,
             this.locationsToolStripMenuItem});
             this.reportsToolStripMenuItem.Name = "reportsToolStripMenuItem";
-            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(74, 26);
+            this.reportsToolStripMenuItem.Size = new System.Drawing.Size(59, 20);
             this.reportsToolStripMenuItem.Text = "Reports";
             // 
             // eventsByDepartmentsToolStripMenuItem
             // 
             this.eventsByDepartmentsToolStripMenuItem.Name = "eventsByDepartmentsToolStripMenuItem";
-            this.eventsByDepartmentsToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
+            this.eventsByDepartmentsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.eventsByDepartmentsToolStripMenuItem.Text = "EventsByDepartments";
             this.eventsByDepartmentsToolStripMenuItem.Click += new System.EventHandler(this.eventsByDepartmentsToolStripMenuItem_Click);
             // 
             // violationsToolStripMenuItem
             // 
             this.violationsToolStripMenuItem.Name = "violationsToolStripMenuItem";
-            this.violationsToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
+            this.violationsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.violationsToolStripMenuItem.Text = "Violations";
             this.violationsToolStripMenuItem.Click += new System.EventHandler(this.violationsToolStripMenuItem_Click);
             // 
             // locationsToolStripMenuItem
             // 
             this.locationsToolStripMenuItem.Name = "locationsToolStripMenuItem";
-            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(236, 26);
+            this.locationsToolStripMenuItem.Size = new System.Drawing.Size(189, 22);
             this.locationsToolStripMenuItem.Text = "Locations";
             this.locationsToolStripMenuItem.Click += new System.EventHandler(this.locationsToolStripMenuItem_Click);
             // 
-            // menuToolStripMenuItem
+            // viewJobsToolStripMenuItem
             // 
-            this.menuToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.logoutToolStripMenuItem});
-            this.menuToolStripMenuItem.Name = "menuToolStripMenuItem";
-            this.menuToolStripMenuItem.Size = new System.Drawing.Size(60, 24);
-            this.menuToolStripMenuItem.Text = "Menu";
-            // 
-            // logoutToolStripMenuItem
-            // 
-            this.logoutToolStripMenuItem.Name = "logoutToolStripMenuItem";
-            this.logoutToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.logoutToolStripMenuItem.Text = "Logout";
-            this.logoutToolStripMenuItem.Click += new System.EventHandler(this.logoutToolStripMenuItem_Click);
+            this.viewJobsToolStripMenuItem.Name = "viewJobsToolStripMenuItem";
+            this.viewJobsToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.viewJobsToolStripMenuItem.Text = "View Jobs";
+            this.viewJobsToolStripMenuItem.Click += new System.EventHandler(this.viewJobsToolStripMenuItem_Click);
             // 
             // AdminHome
             // 
@@ -292,11 +289,9 @@
             this.Controls.Add(this.View_V_Button);
             this.Controls.Add(this.View_E_Button);
             this.Controls.Add(this.Add_Member_button);
-
             this.Controls.Add(this.menuStrip1);
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
-
             this.Name = "AdminHome";
             this.Text = "AdminHome";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Admin_home);
@@ -332,5 +327,6 @@
         private System.Windows.Forms.ToolStripMenuItem locationsToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem menuToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem logoutToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem viewJobsToolStripMenuItem;
     }
 }

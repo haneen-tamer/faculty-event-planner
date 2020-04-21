@@ -61,7 +61,8 @@ namespace FacultyEventPlanner
 
         private void adminLogin_Click(object sender, EventArgs e)
         {
-            OracleCommand checkPass = new OracleCommand();
+        
+           OracleCommand checkPass = new OracleCommand();
             checkPass.Connection = OracleHelper.getConnection();
             checkPass.CommandType = CommandType.StoredProcedure;
             checkPass.CommandText = "Check_Password";
