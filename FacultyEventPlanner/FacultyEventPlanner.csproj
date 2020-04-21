@@ -77,10 +77,6 @@
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-<<<<<<< HEAD
-    <Compile Include="createEvent.Designer.cs">
-      <DependentUpon>createEvent.cs</DependentUpon>
-    </Compile>
     <Compile Include="EventsByDepartment.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -94,9 +90,9 @@
       <DependentUpon>EventsByDepForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
-=======
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="List of Event Requests .cs">
->>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="List of Event Requests .Designer.cs">
@@ -151,7 +147,6 @@
     <Compile Include="View_Violations.Designer.cs">
       <DependentUpon>View_Violations.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="ViolationsRepForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -167,8 +162,6 @@
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
     <Compile Include="viewJobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -178,10 +171,6 @@
     <EmbeddedResource Include="addMember.resx">
       <DependentUpon>addMember.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
-    <EmbeddedResource Include="createEvent.resx">
-      <DependentUpon>createEvent.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="EventsByDepartment.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
       <LastGenOutput>EventsByDepartment.cs</LastGenOutput>
@@ -189,8 +178,6 @@
     <EmbeddedResource Include="EventsByDepForm.resx">
       <DependentUpon>EventsByDepForm.cs</DependentUpon>
     </EmbeddedResource>
-=======
->>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

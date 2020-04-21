@@ -62,3 +62,6 @@ C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Form2.resources
 >>>>>>> 965597bd63a11576e8be1f5a37951341067eabbb
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csprojAssemblyReference.cache
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
