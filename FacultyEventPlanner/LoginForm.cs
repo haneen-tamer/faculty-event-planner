@@ -49,7 +49,6 @@ namespace FacultyEventPlanner
                 userNameText.Clear();
             }else if (ret == LoginForm.SUCCESS)
             {
-                MessageBox.Show("Login successfull!", "Message");
                 OracleHelper.LoggedIn.user_name = userNameText.Text;
                 this.Hide();
                 UserHome uh = new UserHome();
@@ -57,6 +56,55 @@ namespace FacultyEventPlanner
                 uh.Show();
                 passwordTxt.Clear();
                 userNameText.Clear();
+            }
+        }
+
+        private void adminLogin_Click(object sender, EventArgs e)
+        {
+            OracleCommand checkPass = new OracleCommand();
+            checkPass.Connection = OracleHelper.getConnection();
+            checkPass.CommandType = CommandType.StoredProcedure;
+            checkPass.CommandText = "Check_Password";
+            checkPass.Parameters.Add("usr", userNameText.Text);
+            checkPass.Parameters.Add("p", passwordTxt.Text);
+            checkPass.Parameters.Add("ret", OracleDbType.Int32, ParameterDirection.Output);
+            checkPass.ExecuteNonQuery();
+            int ret = int.Parse(checkPass.Parameters["ret"].Value.ToString());
+            if (ret == LoginForm.WRONG_PASS)
+            {
+                MessageBox.Show("Wrong Password!", "Warning");
+                passwordTxt.Clear();
+            }
+            else if (ret == LoginForm.WRONG_USERNAME)
+            {
+                MessageBox.Show("Username not found!", "Warning");
+                passwordTxt.Clear();
+                userNameText.Clear();
+            }
+            else if (ret == LoginForm.SUCCESS)
+            {
+                OracleCommand isAdmin = new OracleCommand();
+                isAdmin.Connection = OracleHelper.getConnection();
+                isAdmin.CommandType = CommandType.StoredProcedure;
+                isAdmin.CommandText = "Is_Admin";
+                isAdmin.Parameters.Add("usr", userNameText.Text);
+                isAdmin.Parameters.Add("ret", OracleDbType.Int32, ParameterDirection.Output);
+                isAdmin.ExecuteNonQuery();
+                int retA = int.Parse(isAdmin.Parameters["ret"].Value.ToString());
+                if(retA == LoginForm.SUCCESS)
+                {
+                    OracleHelper.LoggedIn.user_name = userNameText.Text;
+                    this.Hide();
+                    AdminHome uh = new AdminHome();
+                    uh.Closed += (s, args) => this.Close();
+                    uh.Show();
+                    passwordTxt.Clear();
+                    userNameText.Clear();
+                }
+                else
+                {
+                    MessageBox.Show("You are not an admin! Please login as user....", "Warning");
+                }
             }
         }
     }

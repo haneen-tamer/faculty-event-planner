@@ -215,5 +215,14 @@ namespace FacultyEventPlanner
             v.FormClosed += (s, args) => this.Close();
             v.Show();
         }
+
+        private void logoutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+            this.Hide();
+            LoginForm l = new LoginForm();
+            l.Closed += (s, args) => this.Close();
+            l.Show();
+        }
     }
 }
