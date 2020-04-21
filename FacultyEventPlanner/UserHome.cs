@@ -72,7 +72,7 @@ namespace FacultyEventPlanner
 
                 cmdstr = @"select title, capacity, description, l_name, ls_date, ls_start_time,
                 d_title, user_name from EVENT, department, host
-                where request_status = 'Rejected'
+                where request_status = 'approved'
                 AND title = e_title
                 AND event.d_id =  department.d_id";
                 cmdstr += " and event.d_id = " + d;
