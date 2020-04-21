@@ -62,7 +62,6 @@ C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csprojResolveAssemblyReference.cache
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.addMember.resources
-C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.createEvent.resources
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Form1.resources
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.LoginForm.resources
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.MyEvents.resources
@@ -74,3 +73,4 @@ C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CoreCompileInputs.cache
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Form2.resources

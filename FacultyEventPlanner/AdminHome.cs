@@ -101,6 +101,8 @@ namespace FacultyEventPlanner
                 counter++;
                 dataGridView1.Rows[num].Cells[counter].Value = drow["Request Stautue"].ToString();
                 counter++;
+                dataGridView1.Rows[num].Cells[counter].Value = drow["start time"].ToString();
+                counter++;
                 dataGridView1.Rows[num].Cells[counter].Value = drow["Date"].ToString();
                 counter++;
                 dataGridView1.Rows[num].Cells[counter].Value = drow["Location Name"].ToString();
@@ -188,6 +190,14 @@ namespace FacultyEventPlanner
         {
             this.Hide();
             viewJobs v = new viewJobs();
+            v.FormClosed += (s, args) => this.Close();
+            v.Show();
+        }
+
+        private void View_E_Button_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form2 v = new Form2();
             v.FormClosed += (s, args) => this.Close();
             v.Show();
         }

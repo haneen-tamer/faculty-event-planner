@@ -15,7 +15,7 @@ namespace FacultyEventPlanner
     public partial class View_Violations : Form
     {
         OracleCommand cmd,cmd2,cmd3;
-        OracleDataReader Dr1;
+        OracleDataReader Dr1,Dr2;
         DataTable dt = new DataTable();
         DataRow row;
         DataGridViewButtonColumn btns_Block;
@@ -43,43 +43,58 @@ namespace FacultyEventPlanner
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            cmd3 = new OracleCommand();
-            cmd3.Connection = OracleHelper.getConnection();
-            cmd3.CommandText = @"select ";
-            int index = e.RowIndex;
-            cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
-            int r = cmd3.ExecuteNonQuery();
-
-            if (e.ColumnIndex==2)
+            if (e.ColumnIndex == 2)
             {
                 cmd3 = new OracleCommand();
                 cmd3.Connection = OracleHelper.getConnection();
-                cmd3.CommandText = @"Delete from Violations where e_title = 
-               (select e_title from Host where user_name=: name )";
+                cmd3.CommandText = @"select title from event where title=(select e_title
+                from host where user_name=:name)";
                 int index = e.RowIndex;
                 cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
+                Dr2 = cmd3.ExecuteReader();
+           
+                cmd3 = new OracleCommand();
+                cmd3.Connection = OracleHelper.getConnection();
+                cmd3.CommandText = @"Delete from Violations where e_title = 
+               (select e_title from Host where user_name=: name)";
+                cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
                 int r = cmd3.ExecuteNonQuery();
-                if(r!=-1)
+                if (r != -1)
                 {
                     cmd3 = new OracleCommand();
                     cmd3.Connection = OracleHelper.getConnection();
                     cmd3.CommandText = "Delete from Host where user_name=:name";
                     cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
                     r = cmd3.ExecuteNonQuery();
-                    if(r!=-1)
+                    if (r != -1)
                     {
                         cmd3 = new OracleCommand();
                         cmd3.Connection = OracleHelper.getConnection();
-                        cmd3.CommandText = "Delete from Event where user_name=:name";
+                        cmd3.CommandText = "Delete from users where user_name=:name";
                         cmd3.Parameters.Add("name", dataGridView1.Rows[index].Cells["User"].ToString());
                         r = cmd3.ExecuteNonQuery();
+                        if (r != -1)
+                        {
+                            while (Dr2.Read())
+                            {
+                                cmd3 = new OracleCommand();
+                                cmd3.Connection = OracleHelper.getConnection();
+                                cmd3.CommandText = "Delete from events where title=:name_of_event";
+                                cmd3.Parameters.Add("name_of_event", Dr2[0].ToString());
+                                r = cmd3.ExecuteNonQuery();
+                            }
+                            Dr2.Close();
+                            cmd3 = new OracleCommand();
+                            cmd3.Connection = OracleHelper.getConnection();
+                            cmd3.CommandText = "commit";
+                            r = cmd3.ExecuteNonQuery();
+                            MessageBox.Show("User deleted");
+                            dataGridView1.Rows.RemoveAt(index);
+                        }
+
                     }
                 }
-                if(r!=-1)
-                {
-                    MessageBox.Show("User deleted");
-                    dataGridView1.Rows.RemoveAt(index);
-                }
+                
                 
             }
         }

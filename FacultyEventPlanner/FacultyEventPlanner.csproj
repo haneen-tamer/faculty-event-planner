@@ -63,28 +63,17 @@
     <Compile Include="AdminHome.Designer.cs">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="createEvent.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="createEvent.Designer.cs">
-      <DependentUpon>createEvent.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
-    </Compile>
-
-    <Compile Include="Event Requests.Designer.cs">
-      <DependentUpon>Event Requests.cs</DependentUpon>
     </Compile>
     <Compile Include="List of Event Requests .cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="List of Event Requests .Designer.cs">
       <DependentUpon>List of Event Requests .cs</DependentUpon>
-  </Compile>
+    </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
-
     </Compile>
     <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
@@ -107,28 +96,18 @@
     <Compile Include="UserHome.Designer.cs">
       <DependentUpon>UserHome.cs</DependentUpon>
     </Compile>
-
     <EmbeddedResource Include="AdminHome.resx">
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="createEvent.resx">
-      <DependentUpon>createEvent.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Event Requests.resx">
-      <DependentUpon>Event Requests.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="List of Event Requests .resx">
       <DependentUpon>List of Event Requests .cs</DependentUpon>
-</EmbeddedResource>
+    </EmbeddedResource>
     <Compile Include="View_Violations.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="View_Violations.Designer.cs">
       <DependentUpon>View_Violations.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="AdminHome.resx">
-      <DependentUpon>AdminHome.cs</DependentUpon>
-    </EmbeddedResource>
     <Compile Include="viewJobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -138,12 +117,8 @@
     <EmbeddedResource Include="addMember.resx">
       <DependentUpon>addMember.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="createEvent.resx">
-      <DependentUpon>createEvent.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
-
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
       <DependentUpon>LoginForm.cs</DependentUpon>

@@ -43,18 +43,13 @@ namespace FacultyEventPlanner
             Event.Connection = OracleHelper.getConnection();
             Event.CommandType = CommandType.Text;
             Event.CommandText = @"select event.title,event.capacity,event.description,event.l_name,event.ls_start_time,event.ls_date, department.d_title, locations_schedule.end_time
-from event e, department, locations_schedule
-where event.d_id = department.d_id
-and event.ls_start_time= locations_schedule.start_time
-and event.ls_date = locations_schedule.date_
-and event.l_name = locations_schedule.l_name;
-and title=comboBox1.SelectedIndex;";
-
-            Event.Parameters.Add("capacity",textBox2);
-            Event.Parameters.Add("description", textBox3);
-            Event.Parameters.Add("l_name", textBox4);
-            Event.Parameters.Add("ls_start_time", textBox5);
-            Event.Parameters.Add("ls_date", textBox6);
+            from event , department, locations_schedule
+            where event.d_id = department.d_id
+            and event.ls_start_time= locations_schedule.start_time
+            and event.ls_date = locations_schedule.date_
+            and event.l_name = locations_schedule.l_name
+            and title=:combobox";
+            Event.Parameters.Add("combobox",comboBox1.SelectedItem.ToString());
             OracleDataReader or = Event.ExecuteReader();
             while (or.Read())
             {
@@ -63,10 +58,6 @@ and title=comboBox1.SelectedIndex;";
                 textBox4.Text = or[3].ToString();
                 textBox5.Text = or[4].ToString();
                 textBox6.Text = or[5].ToString();
-
-
-
-
             }
             or.Close();
 
@@ -110,8 +101,9 @@ and title=comboBox1.SelectedIndex;";
             OracleCommand reqaccept = new OracleCommand();
             reqaccept.Connection = OracleHelper.getConnection();
             reqaccept.CommandType = CommandType.Text;
-            reqaccept.CommandText = "update EVENT set REQUEST_STATUS ='accepted' ";
-            
+            reqaccept.CommandText = @"update EVENT set REQUEST_STATUS ='accepted'
+            where title=:event_title";
+            reqaccept.Parameters.Add("event_title",comboBox1.SelectedItem.ToString());
             int k;
             k = reqaccept.ExecuteNonQuery();
             if (k != -1)
