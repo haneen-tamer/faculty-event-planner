@@ -71,13 +71,10 @@
       <DependentUpon>AdminHome.cs</DependentUpon>
     </Compile>
     <Compile Include="createEvent.cs">
-<SubType>Form</SubType>
+      <SubType>Form</SubType>
     </Compile>
     <Compile Include="createEvent.Designer.cs">
-	<DependentUpon>createEvent.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
+      <DependentUpon>createEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="EventsByDepartment.cs">
       <AutoGen>True</AutoGen>
@@ -96,9 +93,6 @@
     </Compile>
     <Compile Include="List of Event Requests .Designer.cs">
       <DependentUpon>List of Event Requests .cs</DependentUpon>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="LocationRep.cs">
       <AutoGen>True</AutoGen>
@@ -137,7 +131,7 @@
       <DependentUpon>AdminHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="createEvent.resx">
-<DependentUpon>createEvent.cs</DependentUpon>
+      <DependentUpon>createEvent.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="List of Event Requests .resx">
       <DependentUpon>List of Event Requests .cs</DependentUpon>
@@ -160,7 +154,6 @@
       <DependentUpon>ViolationsReport.rpt</DependentUpon>
       <SubType>Component</SubType>
     </Compile>
-    
     <Compile Include="viewJobs.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -176,9 +169,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="EventsByDepForm.resx">
       <DependentUpon>EventsByDepForm.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LocationRep.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

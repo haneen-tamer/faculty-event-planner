@@ -62,7 +62,7 @@ namespace FacultyEventPlanner
             }
 
 
-            //insert event
+            //update event
             OracleCommand insEvent = new OracleCommand();
             insEvent.Connection = OracleHelper.getConnection();
             insEvent.CommandText = "Update_Event";

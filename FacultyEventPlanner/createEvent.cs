@@ -199,27 +199,26 @@ namespace FacultyEventPlanner
         {
             OracleCommand cap = new OracleCommand();
             cap.Connection = OracleHelper.getConnection();
-            cap.CommandType = CommandType.Text;
-            cap.CommandText = @"select L_capacity from location
-                                where l_name=:loc";
+            cap.CommandType = CommandType.StoredProcedure;
+            cap.CommandText = "Get_Capacity";
             cap.Parameters.Add("loc", locCB.SelectedItem.ToString());
-            OracleDataReader capDR = cap.ExecuteReader();
-            if (capDR.Read())
+            cap.Parameters.Add("cap", OracleDbType.Int32, ParameterDirection.Output);
+            cap.ExecuteNonQuery();
+            
+            try
             {
-                try
+                int capacity = int.Parse(cap.Parameters["cap"].Value.ToString());
+                int c = int.Parse(capTxt.Text);
+                if (c>capacity)
                 {
-                    int capacity = int.Parse(capDR[0].ToString());
-                    int c = int.Parse(capTxt.Text);
-                    if (c>capacity)
-                    {
-                        MessageBox.Show("Capacity of event must not exceed location capacity! ["
-                            + locCB.SelectedItem.ToString() + " " + capacity + "]", "Warning");
-                    }
-                }catch(Exception ex)
-                {
-                    MessageBox.Show("Please enter number in capacity...", "Warning");
+                    MessageBox.Show("Capacity of event must not exceed location capacity! ["
+                        + locCB.SelectedItem.ToString() + " " + capacity + "]", "Warning");
                 }
+            }catch(Exception ex)
+            {
+                MessageBox.Show("Please enter number in capacity...", "Warning");
             }
+            
 
 
             OracleCommand loc = new OracleCommand();

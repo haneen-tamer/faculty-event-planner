@@ -39,3 +39,44 @@ C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CoreCompileInputs.cache
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
 C:\Users\quickfix\Downloads\New folder\faculty-event-planner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe.config
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.exe
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\FacultyEventPlanner.pdb
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\AxShockwaveFlashObjects.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.CrystalReports.Engine.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportSource.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.Shared.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.Windows.Forms.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\Oracle.DataAccess.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\ShockwaveFlashObjects.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.DataDefModel.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.ClientDoc.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.ReportDefModel.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.Controllers.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.CommLayer.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.DataSetConversion.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.Prompting.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.XmlSerialize.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.CubeDefModel.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.CommonObjectModel.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\stdole.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csprojAssemblyReference.cache
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.AdminHome.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.createEvent.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Form2.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.addMember.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.EventsByDepForm.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.LocationsRepForm.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.LoginForm.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.MyEvents.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.Properties.Resources.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.UserHome.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.View_Violations.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.viewJobs.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.ViolationsRepForm.resources
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.GenerateResource.cache
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.csproj.CopyComplete
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.exe
+F:\Code\Projects\FacultyEventPlanner\FacultyEventPlanner\FacultyEventPlanner\obj\Debug\FacultyEventPlanner.pdb

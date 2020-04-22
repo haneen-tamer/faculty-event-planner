@@ -108,7 +108,8 @@ namespace FacultyEventPlanner
             reqaccept = new OracleCommand();
             reqaccept.Connection = OracleHelper.getConnection();
             reqaccept.CommandType = CommandType.Text;
-            reqaccept.CommandText = "update Locations_schedule set STATUS ='Busy' where l_name=(select l_name from event where title=:event_title)";
+            reqaccept.CommandText = @"update Locations_schedule set STATUS ='Busy' 
+                where l_name=(select l_name from event where title=:event_title)";
             reqaccept.Parameters.Add("event_title", comboBox1.SelectedItem.ToString());
             int k;
             k = reqaccept.ExecuteNonQuery();
