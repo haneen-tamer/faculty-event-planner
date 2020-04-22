@@ -36,11 +36,13 @@ namespace FacultyEventPlanner
         private void UserHome_Load(object sender, EventArgs e)
         {
             
-            cmdstr = @"select title, capacity, description, l_name, ls_date, ls_start_time,
-                d_title, user_name from EVENT, department, host
-                where request_status = 'approved'
-                AND title = e_title
-                AND event.d_id =  department.d_id";
+            cmdstr = @"select title, capacity, description, event.l_name, event.ls_date, event.ls_start_time, locations_schedule.end_time
+                d_title from EVENT, department, locations_schedule
+                where request_status = 'accepted'
+                AND event.d_id =  department.d_id
+                and event.l_name = locations_schedule.l_name
+                and event.ls_date = locations_schedule.date_
+                and event.ls_start_time = locations_schedule.start_time";
             adapter = new OracleDataAdapter(cmdstr, constr);
             ds = new DataSet();
             adapter.Fill(ds, "event");
@@ -70,11 +72,13 @@ namespace FacultyEventPlanner
                     return;
                 }
 
-                cmdstr = @"select title, capacity, description, l_name, ls_date, ls_start_time,
-                d_title, user_name from EVENT, department, host
-                where request_status = 'approved'
-                AND title = e_title
-                AND event.d_id =  department.d_id";
+                cmdstr = @"select title, capacity, description, event.l_name, event.ls_date, event.ls_start_time, locations_schedule.end_time
+                d_title from EVENT, department, locations_schedule
+                where request_status = 'accepted'
+                AND event.d_id =  department.d_id
+                and event.l_name = locations_schedule.l_name
+                and event.ls_date = locations_schedule.date_
+                and event.ls_start_time = locations_schedule.start_time";
                 cmdstr += " and event.d_id = " + d;
                 
                 adapter = new OracleDataAdapter(cmdstr, constr);

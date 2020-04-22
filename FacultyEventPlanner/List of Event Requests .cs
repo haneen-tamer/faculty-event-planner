@@ -115,7 +115,12 @@ namespace FacultyEventPlanner
             if (k != -1)
             {
                 MessageBox.Show("Event is accepted successfully");
-                  
+                comboBox1.Text = "";
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                comboBox1.Items.RemoveAt(comboBox1.SelectedIndex);
             }
         }
 
@@ -145,7 +150,12 @@ namespace FacultyEventPlanner
             if (k != -1)
             {
                 MessageBox.Show("Event is rejected");
-
+                comboBox1.Text = "";
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                comboBox1.Items.RemoveAt(comboBox1.SelectedIndex);
             }
 
 
@@ -195,8 +205,15 @@ namespace FacultyEventPlanner
             if (k != -1)
             {
                 MessageBox.Show("Violation is recorded");
-
+                comboBox1.Text = "";
+                textBox2.Clear();
+                textBox3.Clear();
+                textBox4.Clear();
+                textBox5.Clear();
+                comboBox1.Items.RemoveAt(comboBox1.SelectedIndex);
             }
+            textBox1.Clear();
+            violation.Visible = false;
 
         }
 
@@ -208,6 +225,14 @@ namespace FacultyEventPlanner
         private void label4_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            AdminHome c = new AdminHome();
+            c.Closed += (s, args) => this.Close();
+            c.Show();
         }
     }
 }

@@ -189,7 +189,10 @@ namespace FacultyEventPlanner
             capTxt.Clear();
             hostCLB.ClearSelected();
 
-
+            this.Hide();
+            UserHome u = new UserHome();
+            u.Closed += (s, args) => this.Close();
+            u.Show();
         }
 
         private void locCB_SelectedIndexChanged(object sender, EventArgs e)

@@ -90,6 +90,7 @@ namespace FacultyEventPlanner
             titleTxt.Clear();
             descriptionTxt.Clear();
             capTxt.Clear();
+            depCB.Items.Clear();
             listPanel[0].BringToFront();
             events.Clear();
             eventsCLB.Items.Clear();
@@ -131,6 +132,7 @@ namespace FacultyEventPlanner
             events.Clear();
             eventsCLB.Items.Clear();
             titleTxt.Clear();
+            depCB.Items.Clear();
             descriptionTxt.Clear();
             capTxt.Clear();
             listPanel[0].BringToFront();

@@ -32,7 +32,6 @@
             this.eventsCLB = new System.Windows.Forms.CheckedListBox();
             this.editBtn = new System.Windows.Forms.Button();
             this.delBtn = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.editPanel = new System.Windows.Forms.Panel();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.saveEditBtn = new System.Windows.Forms.Button();
@@ -49,7 +48,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.titleTxt = new System.Windows.Forms.TextBox();
             this.eventsPanel = new System.Windows.Forms.Panel();
-            this.backBtn = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             this.editPanel.SuspendLayout();
             this.eventsPanel.SuspendLayout();
             this.SuspendLayout();
@@ -93,17 +92,6 @@
             this.delBtn.Text = "delete";
             this.delBtn.UseVisualStyleBackColor = true;
             this.delBtn.Click += new System.EventHandler(this.delBtn_Click);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(783, 527);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(153, 50);
-            this.button1.TabIndex = 3;
-            this.button1.Text = "Back";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // editPanel
             // 
@@ -270,22 +258,22 @@
             this.eventsPanel.Size = new System.Drawing.Size(959, 598);
             this.eventsPanel.TabIndex = 1;
             // 
-            // backBtn
+            // button1
             // 
-            this.backBtn.Location = new System.Drawing.Point(40, 12);
-            this.backBtn.Name = "backBtn";
-            this.backBtn.Size = new System.Drawing.Size(75, 23);
-            this.backBtn.TabIndex = 3;
-            this.backBtn.Text = "Back";
-            this.backBtn.UseVisualStyleBackColor = true;
-            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            this.button1.Location = new System.Drawing.Point(783, 527);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(153, 50);
+            this.button1.TabIndex = 3;
+            this.button1.Text = "Back";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // MyEvents
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1053, 703);
-            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.editPanel);
             this.Controls.Add(this.eventsPanel);
             this.Controls.Add(this.label1);
@@ -307,7 +295,6 @@
         private System.Windows.Forms.CheckedListBox eventsCLB;
         private System.Windows.Forms.Button editBtn;
         private System.Windows.Forms.Button delBtn;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel editPanel;
         private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button saveEditBtn;
@@ -324,6 +311,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox titleTxt;
         private System.Windows.Forms.Panel eventsPanel;
-        private System.Windows.Forms.Button backBtn;
+        private System.Windows.Forms.Button button1;
     }
 }
